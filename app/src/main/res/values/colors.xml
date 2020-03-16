@@ -1,0 +1,31 @@
+<resources>
+    <color name="colorPrimary">#f52302</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#00bc71</color>
+
+    <color name="background_gradient_start">#3E5D90</color>
+    <color name="background_gradient_end">#2E4254</color>
+
+    <color name="layer_blue_bg">#4F6D9A</color>
+    <color name="layer_blue_20_bg">#334F6D9A</color>
+
+    <color name="green">#00BC71</color>
+    <color name="green_gradient_start">#00DFAA</color>
+
+    <color name="common_transparent">#00000000</color>
+
+    <color name="black_100">#000000</color>
+    <color name="black_60">#9A000000</color>
+    <color name="black_80">#CD000000</color>
+
+    <color name="dialog_title_black">#222222</color>
+    <color name="dialog_subtitle_gray_30">#4D555555</color>
+    <color name="dialog_subtitle_gray_60">#9A555555</color>
+
+    <color name="white_100">#FFFFFF</color>
+    <color name="white_60">#9AFFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_10">#1AFFFFFF</color>
+
+</resources>

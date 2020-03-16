@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FocusLayer">
+        <attr name="isScale" format="reference|boolean" />
+        <attr name="scaleSize" format="reference|float" />
+        <attr name="layerRadius" format="reference|float" />
+        <attr name="contentBgColor" format="reference|color" />
+        <attr name="focusContentBgColor" format="reference|color" />
+        <attr name="focusStrokeColor" format="reference|color" />
+        <attr name="focusStrokeWidth" format="reference|integer" />
+    </declare-styleable>
+</resources>

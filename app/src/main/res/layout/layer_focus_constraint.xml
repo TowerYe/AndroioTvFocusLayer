@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:focus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="FocusConstraintLayout"
+        android:textColor="@color/white_100"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.tt.focuslayer.widget.FocusLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:descendantFocusability="afterDescendants"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title1"
+        focus:contentBgColor="@color/layer_blue_20_bg"
+        focus:isScale="false">
+
+        <com.tt.focuslayer.widget.FocusConstraintLayout
+            android:id="@+id/layer1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/layer2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            focus:isScale="false">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="焦点不放大"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img1" />
+        </com.tt.focuslayer.widget.FocusConstraintLayout>
+
+        <com.tt.focuslayer.widget.FocusConstraintLayout
+            android:id="@+id/layer2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/layer3"
+            app:layout_constraintStart_toEndOf="@+id/layer1"
+            app:layout_constraintTop_toTopOf="parent"
+            focus:scaleSize="1.1">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="焦点放大1.1倍"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img2" />
+        </com.tt.focuslayer.widget.FocusConstraintLayout>
+
+        <com.tt.focuslayer.widget.FocusConstraintLayout
+            android:id="@+id/layer3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/layer4"
+            app:layout_constraintStart_toEndOf="@+id/layer2"
+            app:layout_constraintTop_toTopOf="parent"
+            focus:focusStrokeColor="@color/colorPrimary"
+            focus:focusStrokeWidth="2"
+            focus:layerRadius="4"
+            focus:scaleSize="1.2">
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="焦点放大1.2倍\n自定义圆角、描边"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img3" />
+        </com.tt.focuslayer.widget.FocusConstraintLayout>
+
+        <com.tt.focuslayer.widget.FocusConstraintLayout
+            android:id="@+id/layer4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/layer3"
+            app:layout_constraintTop_toTopOf="parent"
+            focus:contentBgColor="@color/black_80"
+            focus:focusContentBgColor="@color/green"
+            focus:focusStrokeColor="@color/white_60"
+            focus:focusStrokeWidth="3"
+            focus:layerRadius="8"
+            focus:scaleSize="1.3">
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="焦点放大1.3倍\n自定义圆角、描边、背景色"
+                android:textColor="#ffffff"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img4" />
+        </com.tt.focuslayer.widget.FocusConstraintLayout>
+
+    </com.tt.focuslayer.widget.FocusLinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
