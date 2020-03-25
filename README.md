@@ -4,7 +4,7 @@
 
 **博客地址：**
 
-https://github.com/TowerYe/AndroioTvFocusLayer
+https://towerye.github.io/2020/03/25/TvFocusLayer/#more
 
 **效果图：**
 
