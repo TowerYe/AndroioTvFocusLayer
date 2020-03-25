@@ -2,6 +2,10 @@
 
 一个针对安卓TV开发中 View 获取焦点时进行放大变色的通用库。
 
+**博客地址：**
+
+https://github.com/TowerYe/AndroioTvFocusLayer
+
 **效果图：**
 
 用的 Android Studio 的 TV 虚拟机录制的，有点卡，在小米，天猫盒子上试过是不会出现这种卡顿的效果的。
